@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tapsi clone</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <article class="feature">
+<article class="feature">
       <div class="flex--column">
-        <div class="feature__image image--padding-right">
+        <div class="feature__image image--padding-right ">
           <img src="images/home/i-mac.webp" alt="" />
         </div>
 
@@ -38,7 +28,7 @@
     </article>
     <article class="feature">
       <div class="flex--column">
-        <div class="feature__image">
+        <div class="feature__image ">
           <img src="images/home/macbook.webp" alt="" />
         </div>
 
@@ -60,5 +50,3 @@
         </div>
       </div>
     </article>
-  </body>
-</html>
