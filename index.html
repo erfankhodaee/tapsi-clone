@@ -1,64 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tapsi clone</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <article class="feature">
-      <div class="flex--column">
-        <div class="feature__image image--padding-right">
-          <img src="images/home/i-mac.webp" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tapsi clone</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <article class="feature">
+    <div class="flex--column">
+      <div class="feature__image image--padding-right">
+        <img src="images/home/i-mac.webp" alt="" />
+      </div>
+
+      <div class="feature__content">
+        <h2 class="heading feature__heading">خدمات تپسی ویژه کسب‌وکارها</h2>
+        <p class="feature__text">
+          پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان
+          تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند.
+          و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود
+          را به سادگی مدیریت کنید.
+        </p>
+        <span class="link--arrow inline-block">
+          <a href="#">اطلاعات بیشتر سرویس سازمانی</a>
+          <img class="logo--inline" src="images/ic-left-arrow-orange.svg" alt="" />
+        </span>
+        <a href="#" class="btn btn--red-bg btn--white-text btn--block">
+          ورود و ثبت نام پنل سازمانی
+          <img class="logo--inline" src="images/ic-biker-join.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="feature">
+    <div class="flex--column">
+      <div class="feature__image">
+        <img src="images/home/macbook.webp" alt="" />
+      </div>
+
+      <div class="feature__content">
+        <h2 class="heading feature__heading">خرید کد اعتبار تپسی</h2>
+        <p class="feature__text">
+          کد اعتبار تپسی امکان استفاده از تخفیف در سفر با تپسی به میزان اعتبار
+          خریداری شده را برای کاربران، کسب و کارها و سازمان ها فراهم می کند. تنها
+          با صرف چند دقیقه می توانید این کد را تهیه کنید و آن را در اختیار کارکنان
+          و مشتریانتان بگذارید.
+        </p>
+        <span class="link--arrow inline-block">
+          <a href="#">اطلاعات بیشتر سرویس سازمانی</a>
+          <img class="logo--inline" src="images/ic-left-arrow-orange.svg" alt="" />
+        </span>
+        <a href="#" class="btn btn--red-bg btn--white-text btn--block">
+          ورود و ثبت نام پنل سازمانی
+          <img class="logo--inline" src="images/ic-biker-join.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </article>
+
+
+  <div class="fixed-bg">
+    <div class="flex">
+      <div class="box">
+        <h3>بسته امنیت سفر
+        </h3>
+        <p>امکانات ویژه امنیت سفر، شامل اشتراک سفر و پشتیبانی ۲۴ ساعته تیم متخصصین امنیت تپ
+        </p>
+      </div>
+      <div class="wall"></div>
+      <div class="box">
+        <h4>درخواست تلفنی
+        </h4>
+        <p>امکان درخواست خودرو بدون نیاز به اینترنت و اپلیکیشن، از طریق تماس با شماره ۱۶۳۰</p>
+      </div>
+      <div class="wall"></div>
+      <div class="box">
+        <h4>دسترس‌پذیری برای توان‌یابان
+        </h4>
+        <p>امکان استفاده کاربران نابینا و ناشنوا از اپلیکیشن تپسی و عدم کسر کمیسیون از سفر مسافران ویلچردار</p>
+      </div>
+      <div class="wall"></div>
+      <div class="box">
+        <h4>امکانات هوشمند
+        </h4>
+        <p>سهولت استفاده از اپلیکیشن با پیشنهاد مبدا و مقصد سفر، مقاصد منتخب و پیشنهادهای ویژه شما</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="blog">
+    <h2 class="blog__heading">تازه ترین های وبلاگ تپسی</h2>
+    <div class="blog-flex flex">
+      <div class="item">
+        <div class="item__image">
+          <img src="images/blog/car-start.jpg" alt="car refusing to start">
         </div>
 
-        <div class="feature__content">
-          <h2 class="heading feature__heading">خدمات تپسی ویژه کسب‌وکارها</h2>
-          <p class="feature__text">
-            پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست
-            هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها
-            فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و
-            ارسال کالاهای خود را به سادگی مدیریت کنید.
+        <div class="item__content">
+          <h4 class="item__heading">دلایل استارت نخوردن خودرو</h4>
+          <p class="item__text">
+            اگر به دنبال خرید موتور و استفاده روزانه از آن هستید، یکی از ویژگی‌هایی که باید در نظر بگیرید کم‌استهلاک
+            بودن
+            آن است. چراکه این موضوع مستقیما بر هزینه‌های شما تاثیر دارد. در ادامه این مطلب، بهترین موتورهای کم‌استهلاک و
+            ویژگی‌های آن‌ها را بررسی کرده‌ایم.
           </p>
-          <span class="link--arrow inline-block">
-            <a href="#">اطلاعات بیشتر سرویس سازمانی</a
-            ><img
-              class="logo--inline"
-              src="images/ic-left-arrow-orange.svg"
-              alt=""
-          /></span>
-          <a href="#" class="btn btn--red-bg btn--white-text btn--block"
-            >ورود و ثبت نام پنل سازمانی
-            <img class="logo--inline" src="images/ic-biker-join.svg" alt="" />
-          </a>
         </div>
       </div>
-    </article>
-    <article class="feature">
-      <div class="flex--column">
-        <div class="feature__image">
-          <img src="images/home/macbook.webp" alt="" />
+      <div class="item">
+        <div class="item__image">
+          <img src="images/blog/motor.jpg" alt="a modern motorcycle">
         </div>
 
-        <div class="feature__content">
-          <h2 class="heading feature__heading">خرید کد اعتبار تپسی</h2>
-          <p class="feature__text">
-            کد اعتبار تپسی امکان استفاده از تخفیف در سفر با تپسی به میزان اعتبار
-            خریداری شده را برای کاربران، کسب و کارها و سازمان ها فراهم می کند.
-            تنها با صرف چند دقیقه می توانید این کد را تهیه کنید و آن را در
-            اختیار کارکنان و مشتریانتان بگذارید.
+        <div class="item__content">
+          <h4 class="item__heading">دلایل استارت نخوردن خودرو</h4>
+          <p class="item__text">
+            اگر به دنبال خرید موتور و استفاده روزانه از آن هستید، یکی از ویژگی‌هایی که باید در نظر بگیرید کم‌استهلاک
+            بودن
+            آن است. چراکه این موضوع مستقیما بر هزینه‌های شما تاثیر دارد. در ادامه این مطلب، بهترین موتورهای کم‌استهلاک و
+            ویژگی‌های آن‌ها را بررسی کرده‌ایم.
           </p>
-          <span class="link--arrow">
-            <a href="#">اطلاعات بیشتر سرویس سازمانی</a
-            ><img
-              class="logo--inline"
-              src="images/ic-left-arrow-orange.svg"
-              alt=""
-          /></span>
         </div>
       </div>
-    </article>
-  </body>
+      <div class="item">
+        <div class="item__image">
+          <img src="images/blog/soopup.jpg" alt="damaged car part">
+        </div>
+
+        <div class="item__content">
+          <h4 class="item__heading">دلایل استارت نخوردن خودرو</h4>
+          <p class="item__text">
+            اگر به دنبال خرید موتور و استفاده روزانه از آن هستید، یکی از ویژگی‌هایی که باید در نظر بگیرید کم‌استهلاک
+            بودن
+            آن است. چراکه این موضوع مستقیما بر هزینه‌های شما تاثیر دارد. در ادامه این مطلب، بهترین موتورهای کم‌استهلاک و
+            ویژگی‌های آن‌ها را بررسی کرده‌ایم.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
 </html>
