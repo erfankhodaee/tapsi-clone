@@ -275,6 +275,7 @@ a {
   text-align: center;
   height: 100%;
 }
+
 .box {
   padding: 1rem;
   width: 100%;
@@ -298,6 +299,7 @@ a {
 .box:hover h3 {
   padding: 0;
 }
+
 
 @media screen and (min-width: 768px) {
 
