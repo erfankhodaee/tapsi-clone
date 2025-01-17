@@ -111,6 +111,67 @@ a {
   vertical-align: sub;
 }
 
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border-bottom: var(--color-secondary);
+  height: 6rem;
+  position: fixed;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding: 0 10%;
+  z-index: 9;
+  width: 100%;
+  align-items: center;
+}
+
+.header__logo {
+  cursor: pointer;
+  width: max-content;
+}
+.header__nav {
+  display: none;
+}
+
+.header__list {
+  margin: 0 8% 0 0;
+}
+.header__list:hover a {
+  color: var(--color-accent-red);
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger img {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
 /* Flex */
 
 .flex--column {
@@ -178,70 +239,64 @@ a {
 
 .services__type img {
   width: 8rem;
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
 }
 
-.services__type img:hover{
+.services__type img:hover {
   opacity: 1;
 }
 
-
-
-.services__heading{
-  margin:2rem 0 ;
+.services__heading {
+  margin: 2rem 0;
   font-size: 1.6rem;
   color: var(--color-heading);
 }
 
-.services__description{
+.services__description {
   font-size: 1.4rem;
   color: var(--color-primary);
   margin-bottom: 3rem;
   line-height: 3.2rem;
 }
 
-.services__desktop-image{
+.services__desktop-image {
   display: none;
 }
 
-.services__desktop-image img{
+.services__desktop-image img {
   width: 100%;
 }
 
-
 @media screen and (min-width: 768px) {
   .services {
-  margin: 0 2%;
-  padding: 5rem 8%;
-}
-  .services-flex{
+    margin: 0 2%;
+    padding: 5rem 8%;
+  }
+  .services-flex {
     overflow-x: hidden;
   }
-  
 
-  .services__heading{
+  .services__heading {
     font-size: 2.8rem;
   }
 
-  .services__description{
+  .services__description {
     font-size: 1.8rem;
   }
 
-  .services__content{
+  .services__content {
     margin-top: 5rem;
     display: flex;
     align-items: start;
     justify-content: space-between;
   }
 
-  .services__desktop-image{
+  .services__desktop-image {
     display: inline-block;
     margin-right: 10%;
     align-self: center;
   }
-
-  
 }
 
 /* Feature */
