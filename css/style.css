@@ -4,7 +4,7 @@
   --color-heading: #141414;
   --color-accent-red: #ff5722;
   --color-accent-blue: #0065dc;
-  --color-text-blck: #000;
+  --color-black: #000;
 }
 
 *,
@@ -458,44 +458,169 @@ a {
 
 /* Iran cities on desktop only */
 
-@media screen and (min-width: 768px) {
+.iran-cities {
+  background: url(map-back.svg);
+  padding: 4rem 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iran__heading {
+  color: var(--color-black);
+  font-size: 3.5rem;
+  padding-bottom: 4rem;
+  margin: 0;
+}
+
+.iran__flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.iran-cities h3 {
+  font-weight: 400;
+  color: var(--color-black);
+  margin: 0;
+  padding: 0;
+}
+
+.iran-cities .city {
+  width: 12%;
+  margin-bottom: 1.5rem;
+}
+
+.iran-cities .city .per {
+  font-size: 1.8rem;
+}
+
+.iran-cities .city .eng {
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 769px) {
   .iran-cities {
-    background: url(map-back.svg);
-    padding: 4rem 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: none;
+  }
+}
+
+/* Footer and Contacts */
+
+.footer {
+  padding: 3rem 1.5rem;
+  background: var(--color-black);
+  color: #fff;
+}
+
+.footer__flex {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__logo img {
+  margin-bottom: 0;
+  height: 3rem;
+}
+
+.footer__logo__text {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer__box h6 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__namad {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.namad__box {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.namad__box img {
+  width: 100%;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #acacac;
+}
+
+.desktop-copyright {
+  display: none;
+}
+
+.mobile-copyright {
+  margin-top: 2rem;
+}
+
+.footer__contact {
+  width: 16rem;
+  margin-top: 3rem;
+}
+
+.contact__heading {
+  display: none;
+}
+
+.contact-logoes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-logo{
+  height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 5% 10%;
   }
 
-  .iran__heading {
-    color: var(--color-text-blck);
-    font-size: 3.5rem;
-    padding-bottom: 4rem;
-    margin: 0;
+  .footer__flex {
+    flex-direction: row;
   }
 
-  .iran__flex {
-    display: flex;
-    flex-flow: row wrap;
+  .footer__box {
+    flex-basis: 15rem;
   }
 
-  .iran-cities h3 {
-    font-weight: 400;
-    color: var(--color-text-blck);
-    margin: 0;
-    padding: 0;
-  }
-
-  .iran-cities .city{
-    width: 12%;
-    margin-bottom: 1.5rem;
-  }
-
-  .iran-cities .city .per {
+  .footer__box h6 {
     font-size: 1.8rem;
   }
 
-  .iran-cities .city .eng{
+  .footer__logo img {
+    margin-bottom: 1rem;
+    height: 3rem;
+  }
+
+  .mobile-copyright {
+    display: none;
+  }
+
+  .desktop-copyright {
+    display: flex;
+    font-size: 1.2rem;
+  }
+
+  .contact__heading {
+    display: block;
     font-size: 1.4rem;
-    letter-spacing: 3px;
+    font-weight: 500;
+    text-align: right;
   }
 }
