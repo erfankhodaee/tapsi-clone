@@ -134,7 +134,7 @@ a {
     background: url(banner.webp);
     background-repeat: no-repeat;
     margin-bottom: 12rem;
-    height: calc(100vh - 6.1rem -22%);
+    height: calc(100vh - 18rem);
     background-size: cover;
   }
 }
@@ -205,19 +205,20 @@ a {
 /* phone */
 
 .phone {
-  height: 120%;
+  height: 0%;
   position: absolute;
   bottom: -40%;
-  left: -50%;
+  left: -100%;
   z-index: -1;
   transition: 0.3s;
 }
 
 @media screen and (min-width: 1024px) {
   .phone {
+    height: 120%;
     display: inline;
     bottom: -40%;
-    left: 6%;
+    left: 12%;
   }
 }
 /* Header */
